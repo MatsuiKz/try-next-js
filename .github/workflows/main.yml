@@ -43,6 +43,10 @@ jobs:
       - name: build
         run: npm run build
 
+      - name: Open Web Client Directory
+        run: |
+          mkdir /home/runner/work/try-next-js/try-next-js/dist
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:

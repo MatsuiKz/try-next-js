@@ -76,7 +76,7 @@ jobs:
       - name: Build and Static HTML export with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Make dir
-        id: upload-artifact
+        id: make-dir
         run: |
           mkdir ./out
       - name: Upload artifact
